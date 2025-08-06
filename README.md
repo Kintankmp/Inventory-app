@@ -8,7 +8,7 @@ Aplikasi ini adalah sistem informasi manajemen inventaris barang berbasis web ya
 
 **Fitur Autentikasi**
 Aplikasi ini menggunakan Laravel Breeze sebagai sistem autentikasi. Pengguna harus terdaftar dan login terlebih dahulu untuk bisa mengakses fitur manajemen barang. Hal ini menjaga keamanan data, memastikan hanya pengguna yang berwenang yang dapat memodifikasi inventaris.
-
+![ssi1](ssi.png)
 
 **Dashboard**
 Halaman dashboard menampilkan ringkasan data inventaris dalam bentuk angka dan grafik:

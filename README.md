@@ -53,3 +53,19 @@ Pengguna dapat menghapus data barang dari sistem. Sebelum penghapusan dilakukan,
 **Kurangi Stok**
 Fitur ini memungkinkan pengguna untuk mengurangi jumlah stok suatu barang, misalnya jika ada barang keluar dari gudang. Jumlah yang dikurangi akan langsung tercermin di daftar barang.
 ![Daftar Barang](ssi5.png)
+
+**Profil** dalam aplikasi ini berfungsi untuk mengelola data pribadi pengguna yang sedang login.
+Lihat Informasi Akun
+Menampilkan nama dan email pengguna yang sedang login.
+
+**Edit Data Pribadi**
+
+Nama lengkap
+
+Alamat email
+
+**Ganti Password**
+
+**Hapus Akun (opsional)**
+![Profil](ssi6.png)
+

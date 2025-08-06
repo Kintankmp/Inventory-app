@@ -8,7 +8,8 @@ Aplikasi ini adalah sistem informasi manajemen inventaris barang berbasis web ya
 
 **Fitur Autentikasi**
 Aplikasi ini menggunakan Laravel Breeze sebagai sistem autentikasi. Pengguna harus terdaftar dan login terlebih dahulu untuk bisa mengakses fitur manajemen barang. Hal ini menjaga keamanan data, memastikan hanya pengguna yang berwenang yang dapat memodifikasi inventaris.
-![Dashboard](ssi1.png)
+![Login](ssi1.png)
+![Register](ssi2.png)
 
 **Dashboard**
 Halaman dashboard menampilkan ringkasan data inventaris dalam bentuk angka dan grafik:
@@ -20,7 +21,7 @@ Jumlah Jenis Barang
 Grafik batang (bar chart) yang menunjukkan jumlah stok masing-masing jenis barang
 
 Visualisasi ini membantu manajemen untuk mengambil keputusan berbasis data dengan lebih cepat dan tepat.
-
+![Dashboard](ssi3.png)
 
 **Input Barang**
 Fitur ini memungkinkan pengguna untuk menambahkan data barang ke dalam sistem. Formulir input mencakup:
@@ -34,7 +35,7 @@ Jumlah Stok
 Tanggal Input
 
 Data yang masuk akan divalidasi untuk memastikan tidak ada duplikasi dan sesuai dengan format yang ditentukan.
-
+![Input Barang](ssi4.png)
 
 **Daftar Barang**
 Semua barang yang telah diinput akan ditampilkan dalam tabel dengan desain rapi dan profesional. Fitur tambahan pada daftar barang meliputi:
@@ -51,3 +52,4 @@ Memungkinkan pengguna memperbarui informasi barang, seperti nama, jumlah stok, d
 Pengguna dapat menghapus data barang dari sistem. Sebelum penghapusan dilakukan, sistem akan meminta konfirmasi agar tidak terjadi penghapusan data secara tidak sengaja.
 **Kurangi Stok**
 Fitur ini memungkinkan pengguna untuk mengurangi jumlah stok suatu barang, misalnya jika ada barang keluar dari gudang. Jumlah yang dikurangi akan langsung tercermin di daftar barang.
+![Daftar Barang](ssi5.png)

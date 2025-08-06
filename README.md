@@ -1,61 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**APLIKASI INVENTORY BARANG PT. SHARP SEMICONDUCTOR INDONESIA**
+Oleh : Kintan Kinasih Mahaputri
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Penjelasan Aplikasi**
+Aplikasi ini adalah sistem informasi manajemen inventaris barang berbasis web yang dikembangkan menggunakan framework Laravel dan Tailwind CSS untuk frontend styling. Aplikasi ini dirancang untuk membantu perusahaan atau organisasi dalam mencatat, mengelola, dan memantau stok barang secara efisien dan real-time.
+//
+🔐 Fitur Autentikasi
+Aplikasi ini menggunakan Laravel Breeze sebagai sistem autentikasi. Pengguna harus terdaftar dan login terlebih dahulu untuk bisa mengakses fitur manajemen barang. Hal ini menjaga keamanan data, memastikan hanya pengguna yang berwenang yang dapat memodifikasi inventaris.
+//
+📊 Dashboard
+Halaman dashboard menampilkan ringkasan data inventaris dalam bentuk angka dan grafik:
 
-## About Laravel
+Total Stok Barang
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Jumlah Jenis Barang
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Grafik batang (bar chart) yang menunjukkan jumlah stok masing-masing jenis barang
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Visualisasi ini membantu manajemen untuk mengambil keputusan berbasis data dengan lebih cepat dan tepat.
+//
+📥 Input Barang
+Fitur ini memungkinkan pengguna untuk menambahkan data barang ke dalam sistem. Formulir input mencakup:
 
-## Learning Laravel
+ID Barang (unik)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Nama Barang
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Jumlah Stok
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Tanggal Input
 
-## Laravel Sponsors
+Data yang masuk akan divalidasi untuk memastikan tidak ada duplikasi dan sesuai dengan format yang ditentukan.
+//
+📋 Daftar Barang
+Semua barang yang telah diinput akan ditampilkan dalam tabel dengan desain rapi dan profesional. Fitur tambahan pada daftar barang meliputi:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Pencarian (search) berdasarkan nama atau ID barang
 
-### Premium Partners
+Tombol aksi untuk edit, hapus, dan pengurangan stok
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Desain yang responsif untuk desktop dan mobile
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+✏️ Edit Barang
+Memungkinkan pengguna memperbarui informasi barang, seperti nama, jumlah stok, dan tanggal input. Form edit ditampilkan dengan nilai yang telah ada sebelumnya untuk memudahkan proses pengeditan.
+❌ Hapus Barang
+Pengguna dapat menghapus data barang dari sistem. Sebelum penghapusan dilakukan, sistem akan meminta konfirmasi agar tidak terjadi penghapusan data secara tidak sengaja.
+➖ Kurangi Stok
+Fitur ini memungkinkan pengguna untuk mengurangi jumlah stok suatu barang, misalnya jika ada barang keluar dari gudang. Jumlah yang dikurangi akan langsung tercermin di daftar barang.
